@@ -1,0 +1,44 @@
+div p:only-of-type{
+    background-color: red;
+}
+div p:only-child{
+    background-color: aqua;
+}
+input:read-write{
+    background-color: greenyellow;
+}
+input:required{
+    background-color: skyblue;
+}
+input:read-only{
+    background-color: orange;
+}
+.main div{
+    display: none;
+}
+.main div:target{
+    display: block;
+    background-color: deepskyblue;
+    color: aliceblue;
+    padding: 5px;
+}
+p::first-line{
+    color: aqua;
+}
+p::first-letter{
+    font-size: 30px;
+    color: red;
+}
+p.un::first-letter{
+    font-weight: bold;
+    font-size: 30px;
+    color: green;
+}
+h1::before{
+    content: url(crying-emoji.gif);
+}
+h1::after{
+    content: url(giphy.gif);
+    height: 20px;
+    width: 20px;
+}
